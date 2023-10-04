@@ -21,10 +21,12 @@ import java.util.List;
 @Validated
 public class UserController {
 
+
+
     @Autowired
     private UserService userService;
 
-    @Value("${user.minAge}")
+    @Value("${minAge}")
     private int minAge;
 
     @PostMapping
